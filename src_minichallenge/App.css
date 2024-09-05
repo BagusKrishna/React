@@ -1,0 +1,60 @@
+/* App.css */
+
+/* General layout */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 250px; /* Lebar bisa diubah sesuai keinginan */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sidebar h1 {
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  width: calc(100% - 250px); /* Otomatis menyesuaikan dengan lebar sidebar */
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 24px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.content {
+  margin-top: 60px; /* Memberi ruang untuk navbar */
+  margin-right: 250px; /* Menjaga jarak dari sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #fff;
+  color: #333;
+}

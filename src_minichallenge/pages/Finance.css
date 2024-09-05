@@ -1,0 +1,32 @@
+.finance-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 250px;
+  padding: 20px;
+  transition: margin-right 0.3s ease;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 20px;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.transactions-list {
+  margin-top: 20px;
+}
+
+.transaction-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9fafc;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
